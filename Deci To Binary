@@ -1,0 +1,13 @@
+string decimalToBinary(int n) {
+    result = ""
+    
+    while(n != 1) {
+        if(n % 2 == 1) result += '1'
+        else result += '0'
+        
+        n = n / 2  // each time dividing by 2 
+    }
+    
+    reverse(result)
+    return result
+}
